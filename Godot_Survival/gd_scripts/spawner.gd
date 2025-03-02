@@ -4,7 +4,7 @@ extends Node2D
 	]
 @export var spawn_interval = 3.0
 var spawn_timer = Timer
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	spawn_timer = Timer.new()
 	spawn_timer.wait_time = spawn_interval

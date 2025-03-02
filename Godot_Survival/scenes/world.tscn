@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=4 uid="uid://b0uwlfhqm05l0"]
+[gd_scene load_steps=10 format=4 uid="uid://b0uwlfhqm05l0"]
 
 [ext_resource type="Texture2D" uid="uid://y3mfuytcjllr" path="res://assets/tilesets/pixil-frame-0.png" id="1_2hc5t"]
 [ext_resource type="PackedScene" uid="uid://bxywj0maqveij" path="res://scenes/player_scenes/player.tscn" id="2_vg6qj"]
-[ext_resource type="PackedScene" uid="uid://bqcgci6eg3cn" path="res://scenes/enemy_scenes/enemy.tscn" id="3_psqdh"]
 [ext_resource type="PackedScene" uid="uid://cv21bjkgfbwnv" path="res://scenes/enemy_scenes/spawner.tscn" id="4_eocx4"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_5ugum"]
@@ -62,9 +61,6 @@ tile_set = SubResource("TileSet_ij1jv")
 
 [node name="player" parent="." instance=ExtResource("2_vg6qj")]
 position = Vector2(326, 302)
-
-[node name="enemy" parent="." instance=ExtResource("3_psqdh")]
-position = Vector2(858, 339)
 
 [node name="Spawner" parent="." instance=ExtResource("4_eocx4")]
 position = Vector2(1091, 83)
