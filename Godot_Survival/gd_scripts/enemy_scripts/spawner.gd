@@ -2,7 +2,7 @@ extends Node2D
 @export var enemy_scenes : Array = [
 	preload("res://scenes/enemy_scenes/enemy.tscn")
 	]
-@export var spawn_interval = 5.0
+@export var spawn_interval = 3.0
 var spawn_timer = Timer
 
 func _ready():
