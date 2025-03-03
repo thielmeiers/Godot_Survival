@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 @onready var gun = $gun
+@onready var player_health = $PlayerHealth
 
 func _ready() -> void:
 	add_to_group("Player")
@@ -10,6 +11,7 @@ func _physics_process(delta: float) -> void:
 	rotate_player_to_mouse()
 	move(delta)
 	shoot()
+	update_health_bar()
 
 func shoot():
 	if Input.is_action_just_pressed("shoot"):
@@ -31,3 +33,9 @@ func move(delta):
 		direction.y -= 1
 	velocity = direction.normalized() * SPEED
 	move_and_collide(velocity * delta)
+
+func take_damage(damage: int) -> void:
+	player_health.take_damage(damage)
+
+func update_health_bar():
+	var health_icons = player_health.get_node("HealthIcons")

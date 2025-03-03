@@ -48,7 +48,7 @@ texture = ExtResource("1_2hc5t")
 3:1/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_p4d1y")
 
 [sub_resource type="TileSet" id="TileSet_ij1jv"]
-physics_layer_0/collision_layer = 4
+physics_layer_0/collision_layer = 1
 navigation_layer_0/layers = 1
 sources/0 = SubResource("TileSetAtlasSource_fta0q")
 
@@ -63,4 +63,13 @@ tile_set = SubResource("TileSet_ij1jv")
 position = Vector2(326, 302)
 
 [node name="Spawner" parent="." instance=ExtResource("4_eocx4")]
-position = Vector2(1091, 83)
+position = Vector2(69, 56)
+
+[node name="Spawner2" parent="." instance=ExtResource("4_eocx4")]
+position = Vector2(65, 594)
+
+[node name="Spawner3" parent="." instance=ExtResource("4_eocx4")]
+position = Vector2(1088, 589)
+
+[node name="Spawner4" parent="." instance=ExtResource("4_eocx4")]
+position = Vector2(1093, 58)
