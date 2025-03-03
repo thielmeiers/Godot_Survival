@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bxywj0maqveij"]
 
-[ext_resource type="Script" path="res://gd_scripts/player_scripts/player.gd" id="1_64pkk"]
+[ext_resource type="Script" uid="uid://b66sfxn3g0fj1" path="res://gd_scripts/player_scripts/player.gd" id="1_64pkk"]
 [ext_resource type="Texture2D" uid="uid://dh1dd2yymsfwq" path="res://icon.svg" id="2_te0is"]
 [ext_resource type="PackedScene" uid="uid://wovxh4rxq3as" path="res://scenes/player_scenes/gun.tscn" id="4_mvqfo"]
 [ext_resource type="PackedScene" uid="uid://3kqbkivbhp0n" path="res://scenes/player_scenes/player_health.tscn" id="4_smqrl"]
@@ -35,3 +35,5 @@ texture = ExtResource("5_iex15")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_034vu")
+
+[node name="Camera2D" type="Camera2D" parent="."]
