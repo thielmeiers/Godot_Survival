@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cjytj0dl85b07"]
 
-[ext_resource type="Script" path="res://gd_scripts/enemy_scripts/sword.gd" id="1_3ev8g"]
+[ext_resource type="Script" uid="uid://rgtt2uoua87x" path="res://gd_scripts/enemy_scripts/sword.gd" id="1_3ev8g"]
 [ext_resource type="Texture2D" uid="uid://dhtbsknc1tbxo" path="res://assets/weapon_assets/melee/sword.png" id="1_ggd6e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_um34q"]
