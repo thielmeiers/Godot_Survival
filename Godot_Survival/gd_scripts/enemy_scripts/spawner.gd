@@ -2,6 +2,19 @@ extends Node2D
 @export var enemy_scenes : Array = [
 	preload("res://scenes/enemy_scenes/enemy.tscn")
 	]
+@export var spawn_interval = 3.0
+var spawn_timer = Timer
+
+func _ready():
+	spawn_timer = Timer.new()
+	spawn_timer.wait_time = spawn_interval
+	spawn_timer.autostart = true
+	spawn_timer.one_shot = false
+	spawn_timer.connect("timeout", Callable(self, "_on_spawner_timout"))
+	add_child(spawn_timer)
+	
+func _on_spawner_timout():
+	spawn_enemy()
 
 func spawn_enemy():
 	if enemy_scenes.size() > 0:
@@ -11,6 +24,3 @@ func spawn_enemy():
 		get_parent().add_child(enemy)
 	else:
 		print("No enemy scenes")
-
-func _on_timer_timeout() -> void:
-	spawn_enemy()

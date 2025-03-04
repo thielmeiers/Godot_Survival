@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bx72lev4tsrhx"]
 
-[ext_resource type="Script" uid="uid://cqhlh74rs32nj" path="res://gd_scripts/player_scripts/bullet.gd" id="1_pdwv3"]
+[ext_resource type="Script" path="res://gd_scripts/player_scripts/bullet.gd" id="1_pdwv3"]
 [ext_resource type="Texture2D" uid="uid://cbm75q45e7ox8" path="res://assets/weapon_assets/bullets/bullet.png" id="1_wju25"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lgg1f"]

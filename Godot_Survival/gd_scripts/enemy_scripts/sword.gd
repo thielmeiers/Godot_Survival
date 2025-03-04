@@ -16,6 +16,8 @@ func _ready() -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player") and cooldown_timer and !cooldown_timer.is_stopped():  
 		return
+
 	if body.is_in_group("Player") and body.has_method("take_damage"):
 		body.take_damage(damage)
+		print("Player hit! Damage dealt:", damage)
 		cooldown_timer.start()
