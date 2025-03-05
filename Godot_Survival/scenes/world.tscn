@@ -62,14 +62,14 @@ tile_set = SubResource("TileSet_ij1jv")
 [node name="player" parent="." instance=ExtResource("2_vg6qj")]
 position = Vector2(326, 302)
 
-[node name="Spawner" parent="." instance=ExtResource("4_eocx4")]
-position = Vector2(69, 56)
+[node name="spawner" parent="." instance=ExtResource("4_eocx4")]
+position = Vector2(67, 75)
 
-[node name="Spawner2" parent="." instance=ExtResource("4_eocx4")]
-position = Vector2(65, 594)
+[node name="spawner2" parent="." instance=ExtResource("4_eocx4")]
+position = Vector2(77, 575)
 
-[node name="Spawner3" parent="." instance=ExtResource("4_eocx4")]
-position = Vector2(1088, 589)
+[node name="spawner3" parent="." instance=ExtResource("4_eocx4")]
+position = Vector2(1081, 569)
 
-[node name="Spawner4" parent="." instance=ExtResource("4_eocx4")]
-position = Vector2(1093, 58)
+[node name="spawner4" parent="." instance=ExtResource("4_eocx4")]
+position = Vector2(1095, 86)

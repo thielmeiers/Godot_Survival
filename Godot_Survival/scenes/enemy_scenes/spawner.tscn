@@ -1,12 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://cv21bjkgfbwnv"]
 
 [ext_resource type="Script" uid="uid://c3il10jujsn2q" path="res://gd_scripts/enemy_scripts/spawner.gd" id="1_gottn"]
-[ext_resource type="Texture2D" uid="uid://j67cvp3hnevu" path="res://assets/spawner.png" id="1_ifhs0"]
+[ext_resource type="Texture2D" uid="uid://cum4j738wt4on" path="res://assets/spawner.png" id="1_ifhs0"]
 
-[node name="Spawner" type="Node2D"]
-scale = Vector2(0.75, 0.75)
+[node name="spawner" type="Node2D"]
 script = ExtResource("1_gottn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-rotation = -0.782089
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("1_ifhs0")

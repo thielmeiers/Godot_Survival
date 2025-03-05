@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bxywj0maqveij"]
 
 [ext_resource type="Script" uid="uid://dnwaw32nxwf10" path="res://gd_scripts/player_scripts/player.gd" id="1_64pkk"]
-[ext_resource type="Texture2D" uid="uid://dh1dd2yymsfwq" path="res://icon.svg" id="2_te0is"]
+[ext_resource type="Texture2D" uid="uid://b41inpdy727jc" path="res://assets/character_assets/godot_robo.png" id="2_k3sny"]
 [ext_resource type="PackedScene" uid="uid://wovxh4rxq3as" path="res://scenes/player_scenes/gun.tscn" id="4_mvqfo"]
 [ext_resource type="PackedScene" uid="uid://3kqbkivbhp0n" path="res://scenes/player_scenes/player_health.tscn" id="4_smqrl"]
 [ext_resource type="Texture2D" uid="uid://dy6i0a3168t6w" path="res://assets/health_assets/4_4_heart.png" id="5_iex15"]
@@ -16,7 +16,7 @@ collision_mask = 3
 script = ExtResource("1_64pkk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_te0is")
+texture = ExtResource("2_k3sny")
 
 [node name="gun" parent="." instance=ExtResource("4_mvqfo")]
 position = Vector2(88, 0)
@@ -35,3 +35,6 @@ texture = ExtResource("5_iex15")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_034vu")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
